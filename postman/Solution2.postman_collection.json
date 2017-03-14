@@ -1,0 +1,129 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Solution2",
+		"_postman_id": "41fb39d9-c317-10b3-f1a0-7cd031331a15",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/get/nearbyFriends",
+			"request": {
+				"url": "http://localhost:3000/api/get/nearbyFriends",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "range",
+							"value": "10000",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/get/nearbyFriends",
+			"request": {
+				"url": "http://localhost:3000/api/get/nearbyFriends",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzbm8iOiI1IiwidXNlcl9pZCI6IkFETUlOMSIsInBlcnNvbl9pZCI6IkZHNDU1QUQ4NEEiLCJ0eXBlIjoiQWRtaW4iLCJhY3RpdmUiOiIxIiwiZW1wbG95ZV9pZCI6bnVsbCwibmFtZSI6IlNhamFsIiwiZW1haWwiOiJzYWphbEBnbWFpbC5jb20iLCJwaG9uZSI6Ijg1NzQ4NTIyNTUiLCJET0IiOiIxNS0xMS0xOTk0IiwicHJvZmlsZV9waWMiOiIiLCJzZXgiOiJtYWxlIiwiaWF0IjoxNDgzNzM0NjM3LjIzOTEsIm93biI6IkFkbWluIiwiZGV2aWNlIjoid2ViIiwiZXhwIjoxNDgzNzQxODM3LjIzODQsInRva2VuX3R5cGUiOiJCZWFyZXIifQ.KRm6BpIHz6l2A2UkPpNrKn-2TsyZm3Z-0zFhDLkt6Kg",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "range",
+							"value": "10000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "13.1489345",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "77.8422408",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/calculate/distance",
+			"request": {
+				"url": "http://localhost:3000/api/calculate/distance",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "latitude",
+							"value": "12.9611159",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "77.6362289",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "officeCoordinates",
+							"value": "{ \"manual\" : 0}",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/calculate/distance",
+			"request": {
+				"url": "http://localhost:3000/api/get/friends",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
